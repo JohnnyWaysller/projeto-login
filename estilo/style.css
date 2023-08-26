@@ -1,0 +1,37 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+html {
+    height: 100vh;  
+}
+body{
+    background-color: rgb(31, 31, 54);
+}
+
+main {
+    position: relative; 
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: rgb(201, 172, 172);
+    height: 500px;
+    width: 650px;
+    color: white;
+}
+section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: auto;
+    background: rgb(68, 68, 68) url(../imagens/pexels-max-rahubovskiy-6794928.jpg) no-repeat; 
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 600px;
+
+}
