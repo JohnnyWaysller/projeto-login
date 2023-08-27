@@ -7,7 +7,7 @@
 }
 
 body,html{
-    background-color: rgba(74, 18, 158, 0.711);
+    background-color: rgba(79, 45, 171, 0.832);
     height: 100vh;
     width: 100vw;
 }
@@ -37,7 +37,7 @@ section#login {
 section#login > div#imagem{
     display: block;
     height: 200px;
-    background:rgba(74, 18, 158, 0.711)url(../imagens/pexels-max-rahubovskiy-6794928.jpg) no-repeat;
+    background:rgba(59, 26, 109, 0.711)url(../imagens/pexels-max-rahubovskiy-6794928.jpg) no-repeat;
     background-size: cover;
     background-position: left bottom;
     
