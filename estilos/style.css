@@ -15,14 +15,13 @@ body,html{
 main {
     position: relative; 
     height: 100vh;
-    width: 100vw;
-    
+    width: 100vw;  
 }
+
 section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
     background-color: rgba(229, 229, 229, 0.924); 
     height: 500px;
     width: 250px;
@@ -31,7 +30,7 @@ section#login {
     box-shadow: 0px 0px 10px rgba(2, 2, 2, 0.458); 
     transition: width 0.7s, height 0.7s;
     transition-timing-function: ease;
-
+    transform: translate(-50%,-50%);
 }
 
 section#login>div#imagem{
@@ -46,31 +45,59 @@ section#login>div#imagem{
 section#login > div#formulario {
     display: block;
     padding: 10px;
+    
 }
+
 div#formulario>h1{
     text-align: center;
     margin-bottom: 10px;
 }
+
 div#formulario>p{
     font-size: 0.8em;
     text-indent: 10px;
 }
 
 form>div.campo{
-    background-color: rgba(190, 170, 217, 0.673);
+    display: block;
+    background-color: rgba(95, 60, 138, 0.762);
+    border: 2px solid  rgba(95, 60, 138, 0.107);
+    width: 100%;
     height: 40px;
-    border-radius: 5px;
-    margin: 5px 0px;
-    padding-left: 20px;
-    
+    border-radius: 8px;
+    margin: 5px 0px; 
+}
+div.campo>input:focus-within{
+background-color: white;
 }
 
 div.campo>label{
     display: none;
 }
 
-form> input[type=submit]{
-    margin-top: 15px;
+div.campo>span{
+    display: inline-block;
+    color: white;
+    font-size: 2em;
+    width: 36px;
+    padding: 5px;
+    height: 100%;
+}
+
+div.campo>input{
+    
+    background-color: rgba(228, 218, 246, 0.628);
+    font-size: 1em;
+    border-radius: 8px;
+    height: 100%;
+    border: 0px;
+    width:calc(100% - 40.5px);
+    padding: 4px;
+    transform: translateY(-13.5px);
+}
+
+form>input[type=submit]{
+    margin-top: 20px;
     display: block;
     font-size: 1em;
     width: 100%;
@@ -81,9 +108,11 @@ form> input[type=submit]{
     border-radius: 4px;
     cursor: pointer;
 }
+
 form>input[type=submit]:hover {
-    background-color: rgba(48, 11, 105, 0.79);;
+    background-color: rgba(48, 11, 105, 0.79);
 }
+
 form>a.botao{
     display: block;
     text-align: center;
@@ -102,6 +131,7 @@ form>a.botao{
 form>a.botao>span{
     font-size: 1em;
 }
+
 form>a.botao:hover{
     background-color: rgba(140, 113, 177, 0.762);
 }
